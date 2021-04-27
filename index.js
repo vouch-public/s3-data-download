@@ -8,11 +8,11 @@ const S3 = new AWS.S3({
 })
 
 const fs = require('fs')
-const key = `GITS - 2021-03.zip`
+const key = `MBS-2021-03-01.zip`
 
 S3.getObject({
     Bucket: process.env.AWS_S3_BUCKET,
-    Key: 'GITS - 2021-03.zip'
+    Key: 'MBS-2021-03-01.zip'
 }).promise().then(result => {
     console.log(result)
 
